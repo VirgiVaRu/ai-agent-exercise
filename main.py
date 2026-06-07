@@ -22,7 +22,7 @@ def main():
 
     client = genai.Client(api_key=api_key)
 
-    for _ in range(20):
+    for _ in range(5):
         response = client.models.generate_content(
             model="gemini-2.5-flash", 
             contents=messages, 
